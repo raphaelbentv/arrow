@@ -3,19 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet ArroW2</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ArroW - Tableau de bord</title>
+    <link rel="stylesheet" href="src/styles/dashboard.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur Projet ArroW2</h1>
-    </header>
-    <main>
-        <!-- Contenu principal -->
+    <nav class="sidebar">
+        <div class="logo">ArroW</div>
+        <ul class="nav-menu">
+            <li><a href="#" class="nav-link active">Tableau de bord</a></li>
+            <li><a href="#" class="nav-link">Intervenants</a></li>
+            <li><a href="#" class="nav-link">Planning</a></li>
+            <li><a href="#" class="nav-link">Documents</a></li>
+            <li><a href="#" class="nav-link">Paramètres</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="header">
+            <h1 class="welcome-text">Bonjour, Admin</h1>
+            <button class="action-button">Nouveau intervenant</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-title">Total Intervenants</div>
+                <div class="stat-value">124</div>
+                <div class="stat-trend">+12% ce mois</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Heures planifiées</div>
+                <div class="stat-value">1,580</div>
+                <div class="stat-trend">+5% cette semaine</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Documents en attente</div>
+                <div class="stat-value">23</div>
+                <div class="stat-trend">-3 depuis hier</div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="actions-section">
+                <h2 class="section-title">Actions rapides</h2>
+                <button class="action-button">Ajouter un intervenant</button>
+                <button class="action-button">Planifier une intervention</button>
+                <button class="action-button">Gérer les documents</button>
+            </div>
+
+            <div class="activity-section">
+                <h2 class="section-title">Activités récentes</h2>
+                <div class="activity-item">
+                    <div class="activity-icon">📝</div>
+                    <div class="activity-details">
+                        <div class="activity-title">Nouveau document ajouté</div>
+                        <div class="activity-time">Il y a 2 heures</div>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">👤</div>
+                    <div class="activity-details">
+                        <div class="activity-title">Intervenant mis à jour</div>
+                        <div class="activity-time">Il y a 3 heures</div>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">📅</div>
+                    <div class="activity-details">
+                        <div class="activity-title">Planning modifié</div>
+                        <div class="activity-time">Il y a 5 heures</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2023 Projet ArroW2. Tous droits réservés.</p>
-    </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>
