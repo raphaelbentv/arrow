@@ -1,0 +1,56 @@
+<div class="flex min-h-screen bg-[#1a1a1a] text-white">
+    <aside class="sidebar">
+        <div class="logo">ArroW</div>
+        <nav class="nav-menu">
+            <a href="#" class="nav-link active">Dashboard</a>
+            <a href="#" class="nav-link">Intervenants</a>
+            <a href="#" class="nav-link">Étudiants</a>
+            <a href="#" class="nav-link">Groupes</a>
+            <a href="#" class="nav-link">Paramètres</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="header">
+            <div class="welcome-text">Bonjour, Admin</div>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-title">Étudiants actifs</div>
+                <div class="stat-value">{{stats.students.value}}</div>
+                <div class="stat-trend">↑ {{stats.students.trend}}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Intervenants</div>
+                <div class="stat-value">{{stats.teachers.value}}</div>
+                <div class="stat-trend">↑ {{stats.teachers.trend}}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Groupes actifs</div>
+                <div class="stat-value">{{stats.groups.value}}</div>
+                <div class="stat-trend">{{stats.groups.trend}}</div>
+            </div>
+        </section>
+
+        <div class="content-section">
+            <section class="actions-section">
+                <h2 class="section-title">Actions rapides</h2>
+                <button class="action-button">Ajouter un intervenant</button>
+                <button class="action-button">Ajouter un étudiant</button>
+                <button class="action-button">Gérer les groupes</button>
+            </section>
+
+            <section class="activity-section">
+                <h2 class="section-title">Activité récente</h2>
+                <div class="activity-item" *ngFor="let activity of activities">
+                    <div class="activity-icon">{{activity.icon}}</div>
+                    <div class="activity-details">
+                        <div class="activity-title">{{activity.title}}</div>
+                        <div class="activity-time">{{activity.time}}</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>

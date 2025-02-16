@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+    --primary-color: #FFD700;
+    --background-dark: #1a1a1a;
+    --background-darker: #252525;
+    --border-color: #333;
+    --text-light: #b3b3b3;
+    --text-white: #ffffff;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-white);
+    line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--background-darker);
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* ...existing button styles... */
+
+/* Hero section */
+.hero {
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ...existing hero styles... */
+
+/* Features section */
+.features {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ...existing features styles... */
+
+/* CTA section */
+.cta-section {
+    padding: 6rem 2rem;
+    text-align: center;
+    background-color: var(--background-darker);
+    margin-top: 4rem;
+}
+
+/* ...existing CTA styles... */
+
+/* Footer */
+.footer {
+    background-color: var(--background-darker);
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* ...existing footer styles... */
+
+/* Media queries */
+@media (max-width: 768px) {
+    /* ...existing media queries... */
+}
